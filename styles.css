@@ -280,8 +280,8 @@ a:hover {
 /* EV Icons Section */
 .EV-icons {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-evenly;
+  gap: 20px 50px;
   flex-wrap: wrap;
   margin-top: 40px;
 }
