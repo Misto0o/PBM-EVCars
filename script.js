@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     (gltf) => {
       const model = gltf.scene;
       model.scale.set(1.5, 1.5, 1.5);
-      model.position.set(0, -0.5, 0);
+      model.position.set(1.8, -0.5, 0); // Move it left (-X) or adjust as needed
 
       scene.add(model);
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   // Set camera position further away
-  camera.position.set(0, 2, 10); // Increase the 'z' value to zoom out
+  camera.position.set(0, 2, 11.5); // Increase the 'z' value to zoom out
 
   // Handle window resize to keep the canvas responsive
   window.addEventListener('resize', () => {
@@ -66,3 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.setSize(width, height);
   });
 });
+  // Function to check screen size
+    function checkScreenSize() {
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  // Call the function on page load and on window resize
+  window.addEventListener("load", checkScreenSize);
+  window.addEventListener("resize", checkScreenSize);
+    }
