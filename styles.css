@@ -1,17 +1,13 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
+body, html {
+  overflow-x: hidden;
 }
+
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #121212; /* Dark background */
   color: #ffffff !important; /* All text white */
   line-height: 1.6;
-  margin: 0;
 }
 
 h1, h2, h3 {
@@ -373,8 +369,21 @@ a:hover {
   }
 
   .gallery .column {
-    width: 100%; /* Single column layout on phones */
+    width: 100%; /* Full width for each item on mobile */
+    margin-bottom: 15px; /* Space between items */
   }
+  
+  .gallery .columns {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Reduced gap between columns */
+  }
+}
+
+/* Optional: Add hover effect for images */
+.gallery .column:hover .image {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease;
+}
 
   .features .column,
   .info {
@@ -397,4 +406,3 @@ a:hover {
   .EV-name {
     font-size: 0.8rem; /* Reduce EV name font size */
   }
-}
