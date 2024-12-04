@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV Car Showcase</title>
+
+  <!-- Bulma CSS Framework -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">\\
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Your Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" data-aos="flip-down">
+    <header class="section">
+      <h1 class="title is-2">Electric Vehicle 3D PBM</h1>
+      <p class="subtitle is-4">Explore the future of EV Cars</p>
+    </header>
+
+    <!-- 3D Model Container -->
+    <section class="model-container" data-aos="fade-left">
+      <canvas id="ev-car"></canvas>
+    </section>
+        
+    <main>
+        <!-- Introduction Section -->
+        <section class="info box" data-aos="fade-up">
+          <h2 class="title is-3">Why Electric Vehicles?</h2>
+          <p>Electric vehicles (EVs) are more than just a trend—they represent a profound transformation in the way we think about transportation, energy, and environmental responsibility. From reducing carbon footprints to offering new technological innovations, EVs are reshaping industries and society alike.</p>
+          <p>Electric vehicles have emerged as a solution to many of the pressing challenges humanity faces today. They aim to reduce the dependence on fossil fuels, combat air pollution, and mitigate climate change, while also offering consumers cost-effective, reliable alternatives to traditional vehicles.</p>
+        </section>
+
+        <div class="EV-container">
+            <!-- EV Brands Section -->
+            <section class="EV-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2>Brands That Sell EVs</h2>
+                <div class="EV-icons">
+                    <!-- Tesla -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500">
+                        <img src="SVG-Images/tesla-svgrepo-com.svg" alt="Tesla" class="EV-Icon">
+                        <p class="EV-name">Tesla</p>
+                    </div>
+                    <!-- Nissan -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                        <img src="SVG-Images/nissan-svgrepo-com.svg" alt="Nissan" class="EV-Icon">
+                        <p class="EV-name">Nissan</p>
+                    </div>
+                    <!-- BMW -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
+                        <img src="SVG-Images/bmw-svgrepo-com.svg" alt="BMW" class="EV-Icon">
+                        <p class="EV-name">BMW</p>
+                    </div>
+                    <!-- Ford -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
+                        <img src="SVG-Images/ford-svgrepo-com.svg" alt="Ford" class="EV-Icon">
+                        <p class="EV-name">Ford</p>
+                    </div>
+                    <!-- Audi -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
+                        <img src="SVG-Images/audi-svgrepo-com.svg" alt="Audi" class="EV-Icon">
+                        <p class="EV-name">Audi</p>
+                    </div>
+                    <!-- Chevrolet -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+                        <img src="SVG-Images/chevrolet-svgrepo-com.svg" alt="Chevrolet" class="EV-Icon">
+                        <p class="EV-name">Chevrolet</p>
+                    </div>
+                    <!-- Hyundai -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="600">
+                        <img src="SVG-Images/hyundai-svgrepo-com.svg" alt="Hyundai" class="EV-Icon">
+                        <p class="EV-name">Hyundai</p>
+                    </div>
+                    <!-- Kia -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700">
+                        <img src="SVG-Images/kia-svgrepo-com.svg" alt="Kia" class="EV-Icon">
+                        <p class="EV-name">Kia</p>
+                    </div>
+                    <!-- Mercedes-Benz -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="800">
+                        <img src="SVG-Images/mercedes-benz-svgrepo-com.svg" alt="Mercedes-Benz" class="EV-Icon">
+                        <p class="EV-name">Mercedes-Benz</p>
+                    </div>
+                    <!-- Porsche -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="900">
+                        <img src="SVG-Images/porsche-svgrepo-com.svg" alt="Porsche" class="EV-Icon">
+                        <p class="EV-name">Porsche</p>
+                    </div>
+                    <!-- Volkswagen -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000">
+                        <img src="SVG-Images/volkswagen-svgrepo-com.svg" alt="Volkswagen" class="EV-Icon">
+                        <p class="EV-name">Volkswagen</p>
+                    </div>
+                    <!-- Honda -->
+                    <div class="EV" onclick="toggleEVInfo(this)" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1100">
+                        <img src="SVG-Images/honda-svgrepo-com.svg" alt="Honda" class="EV-Icon">
+                        <p class="EV-name">Honda</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Gallery Section -->
+        <section class="gallery box" data-aos="fade-left">
+          <h2 class="title is-3">EV FACTS</h2>
+          <div class="columns is-multiline">
+            <!-- Gallery Item 1 -->
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="images/ev_lifetime-emissions-comparison_2024.png" alt="EVs Produce Less CO2">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-5">EVs Produce Less CO2 Over Their Lifetime</p>
+                  <p>Electric vehicles are more environmentally friendly, producing significantly less CO2 during their lifecycle compared to conventional petrol cars. As the grid becomes greener, this impact will decrease even further.</p>
+                  <h4 class="subtitle is-6">Source: <a href="https://earthjustice.org/article/electric-vehicles-are-better-for-the-environment" target="_blank">Earth Justice</a></h4>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Gallery Item 2 -->
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="images/prosandconEVpng.png" alt="EV vs Petrol Cars Pros and Cons">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-5">Pros and Cons of EVs vs Petrol Cars</p>
+                  <p>Electric vehicles have a lower environmental impact and lower operating costs compared to petrol cars. However, they still face challenges like limited range and the availability of charging stations.</p>
+                  <h4 class="subtitle is-6">Source: <a href="https://www.ausloans.com.au/finance/types-of-electric-cars" target="_blank">AusLoans</a></h4>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Gallery Item 3 -->
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="images/why-are-electric-vehicles-emerging-1790.png" alt="Why EV Cars Are Becoming a Trend">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-5">Why EV Cars Are Becoming a Trend</p>
+                  <p>With advancements in technology and increasing awareness of environmental issues, electric vehicles are becoming more popular. They offer a sustainable alternative to traditional cars while providing exciting new features.</p>
+                  <h4 class="subtitle is-6">Source: <a href="https://greyviews.com/blogs/why-are-electric-vehicles-emerging" target="_blank">Grey Views</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Technological Innovations Section -->
+        <section class="innovations box" data-aos="fade-up">
+          <h2 class="title is-3">Transformative Innovations in Electric Vehicles</h2>
+          <p>Several groundbreaking innovations are at the heart of the EV revolution:</p>
+          <h3 class="subtitle is-4">1. Battery Technology</h3>
+          <p>One of the most significant innovations is the development of high-energy-density batteries, which has dramatically improved the range and performance of electric vehicles. Lithium-ion and solid-state batteries offer faster charging times, longer lifespans, and more efficient energy storage, pushing the EV market to new heights.</p>
+          <h3 class="subtitle is-4">2. Autonomous Driving</h3>
+          <p>Autonomous driving technologies are rapidly evolving in electric vehicles. Self-driving cars reduce human error and make transportation safer, while also offering convenience and accessibility to people who are unable to drive themselves.</p>
+          <h3 class="subtitle is-4">3. Regenerative Braking</h3>
+          <p>Regenerative braking allows EVs to recover energy that would otherwise be lost during braking. This innovation improves energy efficiency, increases driving range, and reduces wear on mechanical brake components.</p>
+        </section>
+  
+        <!-- Purpose and Function of EVs Section -->
+        <section class="purpose-function box" data-aos="fade-right">
+          <h2 class="title is-3">Purpose and Function of Electric Vehicles</h2>
+          <p>Electric vehicles play a very important role in building a sustainable future. Their function is to provide an eco-friendly alternative to traditional gasoline-powered cars, reducing emissions, energy consumption, and overall environmental damage. EVs are designed to meet the transportation needs of modern society while minimizing the ecological footprint.</p>
+          <ul>
+            <li>Sustainability: EVs are mainly designed to provide sustainability in transportation and offer an environmentally friendly solution for reducing the consumption of fossil fuel.</li>
+            <li>Cost-effectiveness: EVs have lower operating costs than conventional vehicles due to savings on fuel and maintenance costs.</li>
+            <li>Energy Efficiency: EVs efficiently transform most of their energy into motion, using electric motors that are far less wasteful than internal combustion engines.</li>
+          </ul>
+        </section>
+  
+        <!-- Security Analysis Section -->
+        <section class="security box" data-aos="fade-left">
+          <h2 class="title is-3">EV Security Analysis</h2>
+          <p>With the world increasingly moving towards electric vehicles, addressing the security vulnerabilities of new technologies is quite paramount. For instance:</p>
+          <ul>
+            <li>Battery Safety: The risk of battery fire has been one of the worries, though this risk is much reduced with advances in BMS and safety protocols.</li>
+            <li>Cybersecurity: With EVs being highly connected, the potential for cyber-attacks and data breaches is an emerging concern. Ensuring that vehicle communication systems and user data are kept secure is very important in terms of trust and security.</li>
+            <li>Charging Station Security: With increasing EVs on the road, charging stations also need to be secured against potential threats for both the vehicle and the station infrastructure.</li>
+          </ul>
+        </section>
+  
+        <!-- Future of EVs Section -->
+        <section class="future box" data-aos="fade-up">
+          <h2 class="title is-3">The Future of Electric Vehicles</h2>
+          <p>The future of electric vehicles is bright. We are seeing rapid expansion in charging infrastructure, improved technologies of batteries, and wider adoption across all classes of vehicles. And as renewable energy sources continue to proliferate, so will the part that EVs play in a sustainable, low-carbon future.</p>
+          <ul>
+            <li>Global Adoption: By 2040, EVs are expected to dominate the global automotive market, with many countries setting aggressive goals to phase out fossil fuel-powered vehicles.</li>
+            <li>Integration with Smart Grids: EVs in the future will interface with smart grids, enabling energy management systems to optimize charging times and reduce peak-hour pressure on the grid.</li>
+            <li>Vehicle-to-Grid Technology: V2G technology enables electric vehicles to become mobile energy storage units, contributing to grid stability by returning stored energy back to the grid during peak demand.</li>
+          </ul>
+        </section>
+      </main>
+  
+      <footer>
+        <section class="sources box">
+          <h2 class="title is-4">Sources</h2>
+          <ul>
+            <ul>
+                <li>
+                  "How Electric Cars Work." <i>Energy.gov</i>, U.S. Department of Energy, <a href="https://www.energy.gov/eere/vehicles/articles/how-do-electric-cars-work" target="_blank">https://www.energy.gov/eere/vehicles/articles/how-do-electric-cars-work</a>.
+                </li>
+                <li>
+                  "Electric Vehicles: The Future of Transportation." <i>EPA.gov</i>, U.S. Environmental Protection Agency, <a href="https://www.epa.gov/greenvehicles/electric-vehicles" target="_blank">https://www.epa.gov/greenvehicles/electric-vehicles</a>.
+                </li>
+                <li>
+                  "The Environmental Impact of Electric Vehicles." <i>Green Car Reports</i>, 15 May 2021, <a href="https://www.greencarreports.com/news/1136327_the-environmental-impact-of-electric-vehicles" target="_blank">https://www.greencarreports.com/news/1136327_the-environmental-impact-of-electric-vehicles</a>.
+                </li>
+              </ul>
+              <h1>Image Sources</h1>
+            <li><a href="https://earthjustice.org/article/electric-vehicles-are-better-for-the-environment" target="_blank">Earth Justice: EVs Produce Less CO2 Over Their Lifetime</a></li>
+            <li><a href="https://www.ausloans.com.au/finance/types-of-electric-cars" target="_blank">AusLoans: Pros and Cons of EVs</a></li>
+            <li><a href="https://greyviews.com/blogs/why-are-electric-vehicles-emerging" target="_blank">Grey Views: Why EV Cars Are Becoming a Trend</a></li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  <!-- Include Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Include OrbitControls.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- Include GLTFLoader.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Your main script -->
+  <script src="script.js"></script>
+</body>
+</html>
