@@ -350,6 +350,52 @@ a:hover {
   background-color: #e67e22;
 }
 
+/* Container for each section */
+.purpose-function {
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Optional padding */
+  justify-content: space-between;
+}
+
+/* Container for the image and text to align side by side */
+.innovation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Image styles */
+.innovation-image {
+  flex: 0 0 200px; /* Set image width */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.innovation-image img {
+  width: 100%; /* Make the image fill the container */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+/* Text styles */
+.innovation-text {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+.innovation-text h2 {
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.innovation-text ul {
+  margin-top: 15px; /* Space between paragraph and list */
+}
+
+.innovation-text li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+
 /* Phones (Up to 768px) */
 @media (max-width: 768px) {
   body {
