@@ -1,16 +1,21 @@
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #121212; /* Dark background */
-  color: #ffffff !important; /* All text white */
+  background-color: #121212;
+  /* Dark background */
+  color: #ffffff !important;
+  /* All text white */
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
 }
@@ -24,19 +29,22 @@ h1, h2, h3 {
 /* Links */
 a {
   text-decoration: none;
-  color: #3498db; /* Blue color for links */
+  color: #3498db;
+  /* Blue color for links */
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #2ecc71; /* Green color on hover */
+  color: #2ecc71;
+  /* Green color on hover */
 }
 
 /* Header Section */
 header {
   padding: 80px 0;
   text-align: center;
-  background: linear-gradient(145deg, #2c3e50, #34495e); /* Gradient background */
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  /* Gradient background */
   border-radius: 10px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
@@ -57,7 +65,8 @@ header .subtitle {
 .model-container {
   height: 500px;
   width: 100%;
-  background: #333; /* Placeholder background */
+  background: #333;
+  /* Placeholder background */
   margin-top: 30px;
   position: relative;
   border-radius: 10px;
@@ -163,12 +172,15 @@ header .subtitle {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; /* Center the gallery items */
+  justify-content: center;
+  /* Center the gallery items */
 }
 
 .gallery .column {
-  width: calc(33.333% - 20px); /* Width remains same for larger screens */
-  height: 75%; /* Increased height to allow more space for content */
+  width: calc(33.333% - 20px);
+  /* Width remains same for larger screens */
+  height: 75%;
+  /* Increased height to allow more space for content */
   overflow: hidden;
   border-radius: 10px;
   position: relative;
@@ -177,19 +189,23 @@ header .subtitle {
 }
 
 .gallery .column:hover {
-  transform: scale(1.05); /* Subtle zoom effect on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  transform: scale(1.05);
+  /* Subtle zoom effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* More prominent shadow */
 }
 
 .gallery .image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image stretches without distortion */
+  object-fit: cover;
+  /* Ensure the image stretches without distortion */
   transition: transform 0.3s ease-in-out;
 }
 
 .gallery .image:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
+  /* Slight zoom effect on hover */
 }
 
 /* Sources Section */
@@ -219,26 +235,33 @@ header .subtitle {
 }
 
 .sources a:hover {
-  color: #2ecc71; /* Green color on hover */
+  color: #2ecc71;
+  /* Green color on hover */
 }
 
 /* Global Box Style */
 .box {
-  background-color: #3d3d3d; /* Black background */
-  color: #fff; /* White text */
+  background-color: #3d3d3d;
+  /* Black background */
+  color: #fff;
+  /* White text */
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Slight shadow for depth */
 }
+
 /* Section Title Style */
 .title.is-3 {
-  color: #fff; /* White color for headings */
+  color: #fff;
+  /* White color for headings */
   margin-bottom: 20px;
 }
 
 /* Section Subtitle Style */
 .subtitle.is-4 {
-  color: #ccc; /* Slightly lighter text for subtitles */
+  color: #ccc;
+  /* Slightly lighter text for subtitles */
   margin-bottom: 15px;
 }
 
@@ -256,26 +279,36 @@ ul li {
 
 /* Links inside the boxes */
 a {
-  color: #3498db; /* Blue color for links */
+  color: #3498db;
+  /* Blue color for links */
 }
 
 a:hover {
-  color: #2ecc71; /* Hover effect color */
+  color: #2ecc71;
+  /* Hover effect color */
 }
 
 
 /* EV Container */
 .EV-container {
-  display: inline-flex; /* Inline layout to fit around content */
+  display: inline-flex;
+  /* Inline layout to fit around content */
   justify-content: center;
-  align-items: center; /* Center-align items vertically */
-  gap: 15px; /* Reduced gap for compactness */
-  padding: 10px 15px; /* Smaller padding to make it more compact */
+  align-items: center;
+  /* Center-align items vertically */
+  gap: 15px;
+  /* Reduced gap for compactness */
+  padding: 10px 15px;
+  /* Smaller padding to make it more compact */
   color: #cdcdcd;
-  border-radius: 10px; /* Slightly smaller border radius */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  max-width: fit-content; /* Adjust width to fit content */
-  margin: auto; /* Center container horizontally */
+  border-radius: 10px;
+  /* Slightly smaller border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+  max-width: fit-content;
+  /* Adjust width to fit content */
+  margin: auto;
+  /* Center container horizontally */
 }
 
 /* EV Icons Section */
@@ -296,21 +329,26 @@ a:hover {
 
 /* EV Icons (Image-based) */
 .EV-Icon {
-  width: 80px; /* Adjust icon size */
+  width: 80px;
+  /* Adjust icon size */
   height: 80px;
-  object-fit: contain; /* Maintain aspect ratio */
-  filter: invert(100%); /* Make the icon white */
+  object-fit: contain;
+  /* Maintain aspect ratio */
+  filter: invert(100%);
+  /* Make the icon white */
   transition: transform 0.3s ease;
 }
 
 /* Hover effect for EV icons */
 .EV:hover .EV-Icon {
-  transform: scale(1.2); /* Enlarge on hover */
+  transform: scale(1.2);
+  /* Enlarge on hover */
 }
 
 .EV-name {
   font-size: 1rem;
-  color: #fff; /* White color for EV names */
+  color: #fff;
+  /* White color for EV names */
   margin-top: 10px;
   opacity: 0;
   max-height: 0;
@@ -324,7 +362,8 @@ a:hover {
 }
 
 .EV-icons .EV:hover {
-  transform: translateY(-20px); /* Move up on hover */
+  transform: translateY(-20px);
+  /* Move up on hover */
 }
 
 /* Animation Styles */
@@ -355,7 +394,8 @@ a:hover {
 .purpose-function {
   display: flex;
   align-items: center;
-  padding: 20px; /* Optional padding */
+  padding: 20px;
+  /* Optional padding */
   justify-content: space-between;
 }
 
@@ -369,31 +409,39 @@ a:hover {
 
 /* Image styles */
 .innovation-image {
-  flex: 0 0 200px; /* Set image width */
-  margin-right: 20px; /* Space between image and text */
+  flex: 0 0 200px;
+  /* Set image width */
+  margin-right: 20px;
+  /* Space between image and text */
 }
 
 .innovation-image img {
-  width: 100%; /* Make the image fill the container */
+  width: 100%;
+  /* Make the image fill the container */
   height: auto;
-  border-radius: 8px; /* Optional: rounded corners for the image */
+  border-radius: 8px;
+  /* Optional: rounded corners for the image */
 }
 
 /* Text styles */
 .innovation-text {
-  flex: 1; /* Allow text to take up remaining space */
+  flex: 1;
+  /* Allow text to take up remaining space */
 }
 
 .innovation-text h2 {
-  margin-bottom: 15px; /* Space below the heading */
+  margin-bottom: 15px;
+  /* Space below the heading */
 }
 
 .innovation-text ul {
-  margin-top: 15px; /* Space between paragraph and list */
+  margin-top: 15px;
+  /* Space between paragraph and list */
 }
 
 .innovation-text li {
-  margin-bottom: 10px; /* Space between list items */
+  margin-bottom: 10px;
+  /* Space between list items */
 }
 
 
@@ -416,7 +464,7 @@ a:hover {
     max-width: 100%;
   }
 
-  .gallery .image{
+  .gallery .image {
     width: 100%;
   }
 
@@ -440,6 +488,7 @@ a:hover {
 
 /* Mobile-first design */
 @media (max-width: 768px) {
+
   /* Innovation Item Styling */
   .innovation-item {
     display: flex;
