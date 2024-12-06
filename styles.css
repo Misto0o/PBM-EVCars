@@ -77,6 +77,7 @@ header .subtitle {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .info:hover {
@@ -280,8 +281,8 @@ a:hover {
 /* EV Icons Section */
 .EV-icons {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px 50px;
+  justify-content: space-between;
+  gap: 15px 12px;
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -396,59 +397,99 @@ a:hover {
 }
 
 
-/* Phones (Up to 768px) */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   body {
-    font-size: 0.8rem; /* Reduce font size further */
+    font-size: 0.9rem;
   }
 
   header .title {
-    font-size: 2.5rem; /* Adjust header title for phones */
+    font-size: 2rem;
   }
 
   header .subtitle {
-    font-size: 1rem; /* Adjust subtitle size for phones */
-  }
-
-  .container {
-    padding: 10px; /* Reduce container padding */
+    font-size: 1rem;
   }
 
   .gallery .column {
-    width: 100%; /* Full width for each item on mobile */
-    margin-bottom: 15px; /* Space between items */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  
-  .gallery .columns {
-    flex-direction: column; /* Stack items vertically */
-    gap: 15px; /* Reduced gap between columns */
-  }
-}
 
-/* Optional: Add hover effect for images */
-.gallery .column:hover .image {
-  transform: scale(1.05); /* Slight zoom effect */
-  transition: transform 0.3s ease;
-}
-
-  .features .column,
-  .info {
-    padding: 15px; /* Further reduce padding for smaller screens */
+  .gallery .image{
+    width: 100%;
   }
 
   .model-container {
-    height: 300px; /* Further reduce model container height */
-  }
-
-  .EV-icons {
-    gap: 20px; /* Reduce gap between icons */
+    height: 250px;
   }
 
   .EV-Icon {
-    width: 60px; /* Smaller icon size for phones */
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .EV-name {
-    font-size: 0.8rem; /* Reduce EV name font size */
+    font-size: 0.8rem;
   }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Mobile-first design */
+@media (max-width: 768px) {
+  /* Innovation Item Styling */
+  .innovation-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  /* Image Section */
+  .innovation-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Text Section */
+  .innovation-text {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  /* Headings */
+  .subtitle.is-4 {
+    font-size: 1.5rem;
+  }
+
+  .title.is-3 {
+    font-size: 1.8rem;
+  }
+
+  /* List Styling */
+  .innovation-text ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    text-align: left;
+  }
+
+  /* Purpose and Function Section */
+  .purpose-function ul {
+    padding-left: 20px;
+  }
+
+  /* Security Analysis Section */
+  .security ul {
+    padding-left: 20px;
+  }
+
+  /* Future of EVs Section */
+  .future ul {
+    padding-left: 20px;
+  }
+}
