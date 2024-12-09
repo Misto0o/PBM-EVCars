@@ -409,14 +409,14 @@ a:hover {
 
 /* Image styles */
 .innovation-image {
-  flex: 0 0 200px;
+  flex: 0 0 450px;
   /* Set image width */
   margin-right: 20px;
   /* Space between image and text */
 }
 
 .innovation-image img {
-  width: 100%;
+  width: 800px;
   /* Make the image fill the container */
   height: auto;
   border-radius: 8px;
@@ -425,24 +425,25 @@ a:hover {
 
 /* Text styles */
 .innovation-text {
-  flex: 1;
-  /* Allow text to take up remaining space */
+  flex: 1; /* Allow text to take up remaining space */
+  font-size: 1.2rem; /* Increase the base font size */
 }
 
 .innovation-text h2 {
-  margin-bottom: 15px;
-  /* Space below the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 1.5rem; /* Increase heading font size */
 }
 
 .innovation-text ul {
-  margin-top: 15px;
-  /* Space between paragraph and list */
+  margin-top: 15px; /* Space between paragraph and list */
+  font-size: 1.1rem; /* Slightly increase the font size of the list */
 }
 
 .innovation-text li {
-  margin-bottom: 10px;
-  /* Space between list items */
+  margin-bottom: 10px; /* Space between list items */
+  font-size: 1.1rem; /* Increase list item font size */
 }
+
 
 
 /* Responsive Adjustments */
